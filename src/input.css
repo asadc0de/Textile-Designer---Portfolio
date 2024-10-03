@@ -5,17 +5,11 @@
 
 @font-face {
     font-family: 'Matter-Light';
-    src: url('../dist/fonts/matter-light.ttf') format('truetype');
+    src: url('/fonts/matter-light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Mogen';
-    src: url('../dist/fonts/MogenRegular-MVvOn.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 html {
