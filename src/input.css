@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Matter-Light';
+    src: url('../dist/fonts/matter-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mogen';
+    src: url('../dist/fonts/MogenRegular-MVvOn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.scrolling-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+
+    .comm {
+        display: flex;
+        font-size: 4vw;
+        font-weight: bold;
+        animation: scroll 60s linear infinite;
+        cursor: pointer;
+        margin: 0;
+
+        div {
+            margin: 0;
+
+            &:before {
+                content: '•';
+                -webkit-text-stroke: 0px #000;
+                color: rgb(0, 0, 0);
+                display: inline-block;
+                margin: 0 4rem;
+            }
+
+            &:hover {
+                transition: 0.2s;
+            }
+        }
+    }
+
+    &:hover {
+        .comm {
+            animation-play-state: paused;
+        }
+    }
+}
+
+body {
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7, #8e44ad);
+    background: linear-gradient(to right, #4a6279, #bdc3c7, #96b7e7);
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.design-image,
+.model {
+    filter: drop-shadow(2px 3px 3px black);
+}
+
+.flower-petal {
+    filter: drop-shadow(2px 2px 2px gray);
+}
