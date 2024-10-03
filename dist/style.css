@@ -1063,6 +1063,13 @@ video {
   transition-duration: 300ms;
 }
 
+@font-face {
+  font-family: 'Matter-Light';
+  src: url('/fonts/matter-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 html {
   scroll-behavior: smooth;
