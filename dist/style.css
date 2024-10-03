@@ -1065,7 +1065,7 @@ video {
 
 @font-face {
   font-family: 'Matter-Light';
-  src: url('/fonts/matter-light.woff2') format('woff2');
+  src: url('/fonts/matter-light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
